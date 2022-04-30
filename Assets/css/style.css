@@ -3,51 +3,257 @@
 }
 
 :root {
-    --light: peachpuff;
-    --medium: tan;
-    --dark: rgb(159, 123, 96);
+    --light: rgb(255, 224, 229);
+    --light2: rgb(255, 227, 205);
+    --medium: rgb(200, 200, 200);
+    --dark: grey;
+    --card-background: rgb(255, 170, 184);
+    --navtext: white;
     --hover: rgb(181, 181, 248); 
+    --shadow: black;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: var(--dark);
-}
-
-header {
-    padding: 5px;
-    text-align: left;
     background-color: var(--light);
 }
 
+header {
+    padding: 7px;
+    text-align: left;
+    background-color: var(--light);
+    font-family:'Courier New', Courier, monospace;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+h2 {
+    text-align: center ;
+}
+
+
+
+section{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
 
 /* Position the navbar container inside the image */
 .container {
   position: relative;
   margin: 0;
-  width: 100%;
-  height: 100%;
 }
 
 /* The navbar */
 .topnav {
   overflow: hidden;
-  background-color: var(--medium);
+  background-color: var(--dark);
 }
 
 /* Navbar links */
 .topnav a {
   float: right;
-  color: #f2f2f2;
+  color: var(--navtext);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  
 }
 
 .topnav a:hover {
   background-color: var(--hover);
   color: black;
 }
+
+/*banner under header*/
+.banner {
+    text-align: right;
+    min-height: 100px;
+    background: url("../images/pink-smoke.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.50;
+    position: relative;
+    padding: 10px;
+}
+
+.aboutme {
+    
+    justify-content: space-evenly;
+}
+
+.contact-me {
+    justify-content: space-evenly;
+    left:-205px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    
+}
+/* Float four columns side by side */
+.column {
+    float: right;
+    width: 70%;
+    padding: 0 10px;
+}
+  
+  /* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+ }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.verticalLine {
+    border-right: thick solid var(--dark);
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 170px;
+}
+
+.verticalLine2 {
+    border-right: thick solid var(--dark);
+    height: 600px;
+    margin-right: -1175px;
+    margin-left: -20px;
+    margin-top: -500px;
+}
+
+.verticalLine3 {
+    border-right: thick solid var(--dark);
+    height: 150px;
+    margin-right: 80px;
+    margin-left: 15px;
+}
+
+.small-cards {
+    position: relative;
+    margin: 270px;
+    left: -850px;
+}
+
+.work-section {
+    margin-bottom: 100px;
+}
+
+
+
+/* card */
+.card-container {
+    display: inline-flexbox;
+    height: 10px;
+    width: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.L-card-container {
+    display: flex;
+    height: 100px;
+    width: 800px;
+    left: -250px;
+    margin-top: 530px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+}
+
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    background-color: var(--card-background);
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 var(--shadow);
+    transition: background-color .35s ease-in-out;
+}
+
+.card:hover {
+    background-color: var(--hover);
+}
+
+.card-title {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    background-color: var(--medium);
+    color: var(--navtext);
+    max-width: 50%;
+}
+
+.card-content {
+    background-image: var(--card-background)
+}
+
+/* Large card components */
+.L-card {
+    flex: .3 0 0;
+    height: 200px;
+    right:-800px;
+    margin-top: -500px;
+    background: url(../images/blue-smoke.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 var(--shadow);
+    transition: background-color .35s ease-in-out;
+}
+
+.L-card:hover {
+    background-color: var(--dark);
+}
+
+.L-card-title {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    background-color: var(--medium);
+    color: var(--navtext);
+    max-width:50%;
+}
+
+.L-card-content {
+    background-image: var(--card-background)
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
