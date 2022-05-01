@@ -10,11 +10,12 @@
     --card-background: rgb(255, 170, 184);
     --navtext: white;
     --hover: rgb(181, 181, 248); 
+    --hover2: rgb(255, 133, 154);
     --shadow: black;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     background-color: var(--light);
 }
@@ -44,6 +45,32 @@ section{
     padding: 0px;
 }
 
+img {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    float:left;
+    margin-right: 35px;
+    margin-left: 20px;
+    border: solid var(--hover2) 10px;
+    border-radius: 5%;
+}
+
+p1 {
+    display: inline-block;
+    position:relative;
+    text-align: left;
+    width: 500px;
+    margin-top: 0%;
+
+}
+
+footer{
+    text-align: center;
+}
+
+
+
 /* Position the navbar container inside the image */
 .container {
   position: relative;
@@ -68,7 +95,7 @@ section{
 
 .topnav a:hover {
   background-color: var(--hover);
-  color: black;
+  color: var(--shadow);
 }
 
 /*banner under header*/
@@ -91,7 +118,7 @@ section{
 
 .contact-me {
     justify-content: space-evenly;
-    left:-205px;
+    left:-580px;
     margin: auto;
     margin-top: 200px;
     padding: 20px;
@@ -99,6 +126,9 @@ section{
     display: flex;
     
 }
+
+
+
 /* Float four columns side by side */
 .column {
     float: right;
@@ -120,31 +150,36 @@ section{
 
 
 .verticalLine {
+    display: block;
     border-right: thick solid var(--dark);
-    height: 200px;
+    height: 300px;
     margin-right: 20px;
     margin-left: 170px;
 }
 
 .verticalLine2 {
+    display: block;
     border-right: thick solid var(--dark);
-    height: 600px;
-    margin-right: -1175px;
-    margin-left: -20px;
+    height: 700px;
+    margin-right: -1250px;
+    margin-left: -170px;
     margin-top: -500px;
 }
 
 .verticalLine3 {
+    display: block;
     border-right: thick solid var(--dark);
     height: 150px;
-    margin-right: 80px;
-    margin-left: 15px;
+    margin-right: -720px;
+
 }
 
 .small-cards {
     position: relative;
-    margin: 270px;
-    left: -850px;
+    margin: 400px;
+    left: -600px;
+    height: 10px;
+    width: 250px;
 }
 
 .work-section {
@@ -157,11 +192,12 @@ section{
 .card-container {
     display: inline-flexbox;
     height: 10px;
-    width: 175px;
+    width: 250px;
+    margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
     padding: 16px;
-    position: relative;
+    position:relative;
     justify-content: space-evenly;
 }
 
@@ -169,29 +205,39 @@ section{
     display: flex;
     height: 100px;
     width: 800px;
-    left: -250px;
-    margin-top: 530px;
+    left: -100px;
+    margin-top: 700px;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10px;
     position: relative;
+
 }
 
+
+
 .card {
+    display: flex;
+    flex-wrap: wrap;
     flex: 1 0 0;
+    justify-content: space-between;
     padding: 10px;
     background-color: var(--card-background);
     margin: 10px 0;
     position: relative;
-    display: flex;
+    border: solid var(--shadow);
+    border-radius: 3%;
     flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 var(--shadow);
+    box-shadow: 0 6px 10px 0 var(--dark);
     transition: background-color .35s ease-in-out;
 }
 
+
+
 .card:hover {
     background-color: var(--hover);
+    cursor: no-drop;
+    filter:brightness(.5);
 }
 
 .card-title {
@@ -201,34 +247,67 @@ section{
     justify-content: center;
     border: 2px solid;
     background-color: var(--medium);
-    color: var(--navtext);
+    color: var(--shadow);
+    opacity: 0.7;
     max-width: 50%;
 }
 
 .card-content {
-    background-image: var(--card-background)
-}
+    background: url(../images/ledwall.webp);
+    background-size: cover;
+    color: transparent;
+} 
 
+.card-content-2 {
+    background: url(../images/lightstick.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    color: transparent;
+} 
+
+.card-content-3 {
+    background: url(../images/gaming.png);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+} 
+
+.card-content-4 {
+    background: url(../images/robot.jpg);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+} 
 /* Large card components */
+
+
 .L-card {
-    flex: .3 0 0;
-    height: 200px;
-    right:-800px;
-    margin-top: -500px;
-    background: url(../images/blue-smoke.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    padding: 10px;
-    position: relative;
-    display: flex;
+    display: inline-flex;
+    height: 300px;
+    width: 800px;
+    /*margin-right: -300px;
+    position:relative;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 var(--shadow);
+    top: -500px;*/
+    left: 1000px;
+    margin-top: -500px;
+    background: url(../images/horiseon.PNG);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 10px;
+    position: relative;
+    border: solid var(--shadow);
+    border-radius: 2%;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 var(--dark);
     transition: background-color .35s ease-in-out;
 }
 
-.L-card:hover {
-    background-color: var(--dark);
+.L-card-container:hover {
+    filter:brightness(.7);
+    cursor: pointer;
 }
 
 .L-card-title {
@@ -237,23 +316,72 @@ section{
     display: flex;
     justify-content: center;
     border: 2px solid;
-    background-color: var(--medium);
-    color: var(--navtext);
+    background-color: var(--light2);
+    color: var(--shadow);
+    height: 20%;
     max-width:50%;
+    opacity: 0.7;
 }
 
 .L-card-content {
-    background-image: var(--card-background)
+    background: var(--card-background);
+
 }
 
 
 
 
-
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+.bottom-nav a:hover {
+    background-color: var(--hover2);
+    color: black;
   }
+
+.bottom-nav a {
+    display: inline-block;
+    position: relative;
+    color: var(--dark);
+    padding: 15px 20px;
+    text-decoration:underline solid var(--dark);
+    font-size: 17px;
+    justify-content: center;
+    right:-800px;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+main, nav {
+    flex-direction: column;
+    background-color: var(--light2);
+}
+
+div {
+    order: 2;
+}
+
+header {
+    background: var(--hover);
+}
+
+nav, footer {
+    background-color: var(--hover);
+}
+
+@media screen and (min-width: 992px) {
+
+header {
+    background:var(--shadow);
+}
+}
+  
+
+@media screen and (max-width: 576px) {
+
+img {
+    background-color: var(--hover);
+}
+}
+
+}
