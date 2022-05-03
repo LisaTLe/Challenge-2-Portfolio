@@ -102,7 +102,7 @@ footer{
 .banner {
     text-align: right;
     min-height: 100px;
-    background: url("../images2/pink-smoke.jpg");
+    background: url("../images/pink-smoke.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -251,27 +251,27 @@ footer{
 }
 
 .card-content {
-    background: url(../images2/ledwall.webp);
+    background: url(../images/ledwall.webp);
     background-size: cover;
     color: transparent;
 } 
 
 .card-content-2 {
-    background: url(../images2/lightstick.jpg);
+    background: url(../images/lightstick.jpg);
     background-size: cover;
     background-position: center bottom;
     color: transparent;
 } 
 
 .card-content-3 {
-    background: url(../images2/gaming.png);
+    background: url(../images/gaming.png);
     background-position: center;
     background-size: cover;
     color: transparent;
 } 
 
 .card-content-4 {
-    background: url(../images2/robot.jpg);
+    background: url(../images/robot.jpg);
     background-position: center;
     background-size: cover;
     color: transparent;
@@ -290,7 +290,7 @@ footer{
     top: -500px;*/
     left: 1000px;
     margin-top: -500px;
-    background: url(../images2/horiseon.PNG);
+    background: url(../images/horiseon.PNG);
     background-repeat: no-repeat;
     background-position: top left;
     padding: 10px;
