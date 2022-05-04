@@ -102,7 +102,7 @@ footer{
 .banner {
     text-align: right;
     min-height: 100px;
-    background: url("./images/pink-smoke.jpg");
+    background: url("images/pink-smoke.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
