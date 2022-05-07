@@ -26,8 +26,8 @@ A simple Web Application for a personal portfolio that displays work samples and
 
 <h2> Screenshots </h2>
 
-![Screenshot](screenshot.PNG)
+![Screenshot](/images/screenshot.PNG)
 
-![Screenshot](screenshot2.PNG)
+![Screenshot](/images/screenshot2.PNG)
 
-![Screenshot](screenshot3.PNG)
+![Screenshot](/images/screenshot3.PNG)
